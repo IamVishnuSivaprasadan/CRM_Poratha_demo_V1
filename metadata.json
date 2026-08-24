@@ -1,0 +1,6 @@
+{
+  "name": "Poratha Document Control",
+  "description": "Centralized Document Verification & Compliance Platform for Poratha Corporation",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
