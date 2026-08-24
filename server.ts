@@ -27,8 +27,7 @@ async function startServer() {
   const app = express();
   const PORT = Number(process.env.PORT) || 3000;
 
-  app.use(express.json());
-  app.use(express.urlencoded({ extended: true }));
+
   app.use((req, res, next) => {
   res.setHeader(
     'Access-Control-Allow-Origin',
@@ -51,7 +50,9 @@ async function startServer() {
 
   next();
 });
-
+  
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
   // Initialize Database & seed data
   Database.getInstance();
 
