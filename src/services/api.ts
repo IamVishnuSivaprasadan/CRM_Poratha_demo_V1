@@ -1,6 +1,6 @@
 import { DocumentStatus, RejectionReasonCode, UserRole } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = 'https://crm-poratha-demo-v1.onrender.com/api';
 
 function getAuthToken(): string | null {
   return localStorage.getItem('poratha_auth_token');
